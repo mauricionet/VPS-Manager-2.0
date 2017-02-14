@@ -7,3 +7,5 @@
 .vivo.com.br
 .oi.com.br 
 .m.claroseguridad.com
+.bancodobrasil.com.br
+.minhaclaro.claro.com.br
