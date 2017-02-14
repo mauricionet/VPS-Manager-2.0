@@ -91,7 +91,7 @@ then
 	chmod +x /bin/addhost
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/criarusuario
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
