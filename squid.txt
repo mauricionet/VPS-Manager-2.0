@@ -1,3 +1,4 @@
+
 acl payload dstdomain -i "/etc/squid/payload.txt"
 
 http_access allow url1
@@ -6,8 +7,7 @@ http_access allow url3
 http_access allow payload
 
 http_access deny all
-cache deny all
-
+ 
 http_port 80
 http_port 3128
 http_port 8080
