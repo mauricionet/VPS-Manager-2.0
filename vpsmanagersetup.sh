@@ -77,7 +77,7 @@ if [ -f "/usr/sbin/ufw" ] ; then
 fi
 if [ -d "/etc/squid3/" ]
 then
-	wget https://github.com/mauricionet/VPS-Manager-2.0/blob/master/squid1.txt -O /tmp/sqd1
+	wget https://raw.githubusercontent.com/mauricionet/VPS-Manager-2.0/master/squid1.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/squid2.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid3/squid.conf
@@ -87,11 +87,11 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/addhost.sh -O /bin/addhost
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/payload.txt -O /bin/addhost
 	chmod +x /bin/addhost
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
-	wget  https://raw.githubusercontent.com/salesiano38/mauricionet/master/criarusuario2.sh -O /bin/criarusuario
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/delhost.sh -O /bin/delhost
 	chmod +x /bin/delhost
@@ -103,7 +103,7 @@ then
 	chmod +x /bin/remover
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarlimite.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
@@ -124,19 +124,19 @@ then
 fi
 if [ -d "/etc/squid/" ]
 then
-	wget https://raw.githubusercontent.com/mauricionet/VPS-Manager-2.0/master/squid1.txt -O /tmp/sqd1
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/squid.txt -O /tmp/sqd1
 	echo "acl url3 dstdomain -i $ipdovps" > /tmp/sqd2
 	wget https://raw.githubusercontent.com/mauricionet/VPS-Manager-2.0/master/squid.txt -O /tmp/sqd3
 	cat /tmp/sqd1 /tmp/sqd2 /tmp/sqd3 > /etc/squid/squid.conf
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/payload.txt -O /etc/squid/payload.txt
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/payload.txt  -O /etc/squid/payload.txt
 	echo " " >> /etc/squid/payload.txt
 	grep -v "^Port 443" /etc/ssh/sshd_config > /tmp/ssh && mv /tmp/ssh /etc/ssh/sshd_config
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/addhost.sh -O /bin/addhost
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/addhost.sh  -O /bin/addhost
 	chmod +x /bin/addhost
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/alterarsenha
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/addhost.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/criarusuario2.sh -O /bin/criarusuario
 	chmod +x /bin/criarusuario
@@ -150,9 +150,9 @@ then
 	chmod +x /bin/remover
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarlimite.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/ajuda.sh -O /bin/ajuda
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshmonitor2.sh -O /bin/sshmonitor
 	chmod +x /bin/sshmonitor
