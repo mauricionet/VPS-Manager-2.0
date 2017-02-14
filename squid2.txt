@@ -1,4 +1,3 @@
-
 acl payload dstdomain -i "/etc/squid3/payload.txt"
 
 http_access allow url1
