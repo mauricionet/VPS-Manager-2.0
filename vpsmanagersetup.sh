@@ -87,7 +87,7 @@ then
 	echo "Port 443" >> /etc/ssh/sshd_config
 	grep -v "^PasswordAuthentication yes" /etc/ssh/sshd_config > /tmp/passlogin && mv /tmp/passlogin /etc/ssh/sshd_config
 	echo "PasswordAuthentication yes" >> /etc/ssh/sshd_config
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/payload.txt -O /bin/addhost
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/addhost.sh -O /bin/addhost
 	chmod +x /bin/addhost
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarsenha.sh -O /bin/alterarsenha
 	chmod +x /bin/alterarsenha
@@ -103,7 +103,7 @@ then
 	chmod +x /bin/remover
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/ajuda.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
@@ -150,7 +150,7 @@ then
 	chmod +x /bin/remover
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/sshlimiter
 	chmod +x /bin/sshlimiter
-	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/alterarlimite
+	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/alterarlimite.sh -O /bin/alterarlimite
 	chmod +x /bin/alterarlimite
 	wget https://raw.githubusercontent.com/salesiano38/mauricionet/master/sshlimiter2.sh -O /bin/ajuda
 	chmod +x /bin/ajuda
