@@ -9,3 +9,4 @@
 .m.claroseguridad.com
 .bancodobrasil.com.br
 .minhaclaro.claro.com.br
+.clarosync.com 
