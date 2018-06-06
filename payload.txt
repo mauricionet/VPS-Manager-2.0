@@ -11,3 +11,4 @@
 .minhaclaro.claro.com.br
 .clarosync.com 
 .site2unblock.com
+.cloudfront.net
